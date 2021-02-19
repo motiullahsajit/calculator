@@ -1,62 +1,57 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-body{
-    font-family: 'Roboto', sans-serif;
+*{
+    box-sizing: border-box;
 }
-.calc-btn{
-    background-color: silver;    
-    color: black;
-    width: 25px;
-    height: 45px;
-    border: 1px solid gray;
+body {
+    background: #10101B;
+    height: 100vh;
+}
+.half-width {
+    background: #222436;
+    padding: 30px 0px;
     text-align: center;
-    cursor: pointer;
-    font-size: 32px;
-    font-weight: 100;
-    padding-top: 3px;
 }
-.calc-btn:hover{
-    background-color: orange;
+.numbers {
+    margin: 30px 5px;
 }
-.row{
-    display: table;
-    table-layout: fixed;
-    width: 200px;
+.calc-typed {
+margin-top: 20px;
+font-size: 45px;
+text-align: right;
+color: #fff;
 }
-.colnum{
-    display: table-cell;
+.calc-button-row {
+width: 100%;
+padding: 0px 18px;
 }
-#calc-zero{
-    width: 52.666666667px;
-    border-radius: 0 0 0 7px;
+.button {
+width: 20%;
+background: #425062;
+color: #fff;
+padding: 20px 0;
+margin: 5px;
+display: inline-block;
+font-size: 25px;
+text-align: center;
+vertical-align: middle;
+margin-right: -4px;
+border-radius: 10px;
+cursor: pointer;
 }
-#calc-clear{
-    width: 52.666666667px;
-}
-#calc-display-val{
-    height: 80px;
-    color: white;
-    text-align: right;
-    border-left: 1px solid gray;
-    border-right: 1px solid gray;
-    border-top: 1px solid gray;
-    font-size: 48px;
-    background-color: #383838;
-    overflow: hidden;
-    white-space: nowrap;
-    padding: 12px;
-    border-radius: 7px 7px 0 0;
-}
-.calc-btn-operator{
-    background-color: orange;
-    color: white;
-}
-h1{
-    text-align: center;
-    margin-top: 50px;
+#calc-clear,#calc-equals{
+    width: 40%;
+    margin-right: 1.5px;
 }
 #calc-equals{
-    border-radius: 0 0 7px 0;
+    margin-left: 10px;    
 }
-#calc-parent{
-    margin-left: calc(50% - 100px);
+#calc-display-val{
+    width: 80%;
+    height: 120px;
+    color: white;
+    text-align: right;
+    font-size: 48px;
+    background-color: #425062;
+    overflow: hidden;
+    padding: 12px;
+    border-radius: 7px 7px 0 0;
 }

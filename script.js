@@ -49,7 +49,7 @@ var performOperation = (clickObj) => {
             evalStringArray.push(pendingVal);
             evalStringArray.push('-');
             break;
-        case 'X':
+        case 'x':
             pendingVal = displayVal;
             displayVal = '0';
             displayValElement.innerText = displayVal;

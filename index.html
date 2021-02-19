@@ -4,47 +4,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Moti R Calculator</h1>
-    <div id="calc-parent">
-        <div class="row">
-            <div class="colnum" id="calc-display-val">0</div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="input-section half-width">
+                    <div class="mx-auto" id="calc-display-val">0</div>
+                    <div class="numbers">
+                        <div id="digit-container" class="calc-body">
+                            <div class="calc-button-row">
+                                <div class="calc-btn button" id="calc-clear">AC</div>
+                                <div class="calc-btn button" id="calc-backspace">&larr;</div>
+                                <div class="calc-btn button calc-btn-operator" id="calc-divide">&#247;</div>
+                            </div>
+                            <div class="calc-button-row">
+                                <div class="calc-btn button calc-btn-num" id="calc-seven">7</div>
+                                <div class="calc-btn button calc-btn-num" id="calc-eight">8</div>
+                                <div class="calc-btn button calc-btn-num" id="calc-nine">9</div>
+                                <div class="calc-btn button calc-btn-operator" id="calc-multiply">x</div>
+                            </div>
+                            <div class="calc-button-row">
+                                <div class="calc-btn button calc-btn-num" id="calc-four">4</div>
+                                <div class="calc-btn button calc-btn-num" id="calc-five">5</div>
+                                <div class="calc-btn button calc-btn-num" id="calc-six">6</div>
+                                <div class="calc-btn button calc-btn-operator " id="calc-minus">-</div>
+                            </div>
+                            <div class="calc-button-row">
+                                <div class="calc-btn button calc-btn-num" id="calc-one">1</div>
+                                <div class="calc-btn button calc-btn-num" id="calc-two">2</div>
+                                <div class="calc-btn button calc-btn-num" id="calc-three">3</div>
+                                <div class="calc-btn button calc-btn-operator" id="calc-plus">+</div>
+                            </div>
+                            <div class="calc-button-row">
+                                <div class="calc-btn button calc-btn-num" id="calc-zero">0</div>
+                                <div class="calc-btn button" id="calc-decimal">.</div>
+                                <div class="calc-btn button calc-btn-operator" id="calc-equals">=</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row">
-            <div class="calc-btn colnum" id="calc-clear">AC</div>
-            <div class="calc-btn colnum" id="calc-backspace">&#8676;</div>
-            <div class="calc-btn calc-btn-operator colnum" id="calc-divide">&#247;</div>
-        </div>
-        <div class="row">
-            <div class="calc-btn calc-btn-num colnum" id="calc-seven">7</div>
-            <div class="calc-btn calc-btn-num colnum" id="calc-eight">8</div>
-            <div class="calc-btn calc-btn-num colnum" id="calc-nine">9</div>
-            <div class="calc-btn calc-btn-operator colnum" id="calc-multiply">X</div>
-        </div>
-        <div class="row">
-            <div class="calc-btn calc-btn-num colnum" id="calc-four">4</div>
-            <div class="calc-btn calc-btn-num colnum" id="calc-five">5</div>
-            <div class="calc-btn calc-btn-num colnum" id="calc-six">6</div>
-            <div class="calc-btn calc-btn-operator colnum" id="calc-minus">-</div>
-        </div>
-        <div class="row">
-            <div class="calc-btn calc-btn-num colnum" id="calc-one">1</div>
-            <div class="calc-btn calc-btn-num colnum" id="calc-two">2</div>
-            <div class="calc-btn calc-btn-num colnum" id="calc-three">3</div>
-            <div class="calc-btn calc-btn-operator colnum" id="calc-plus">+</div>
-        </div>
-        <div class="row">
-            <div class="calc-btn calc-btn-num colnum" id="calc-zero">0</div>
-            <div class="calc-btn colnum" id="calc-decimal">.</div>
-            <div class="calc-btn calc-btn-operator colnum" id="calc-equals">=</div>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
+        <script src="script.js"></script>
 </body>
 
 </html>
